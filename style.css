@@ -1,0 +1,169 @@
+/* General styles*/
+body {
+  margin: 0;
+  font-family: Bahnschrift;
+  background: #B5FCE8;
+  scroll-behavior: smooth;
+}
+
+header{
+  background: linear-gradient(to left,#8523, #00f2fe);
+  color: black; 
+  text-shadow: 2px 2px 4px #1568;
+  padding: 10px 20px;
+  font-size: 22px;
+}
+
+.navbar {
+  display: flex;  
+  justify-content: space-between;
+  align-items: centre;
+}
+
+ .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links a {
+  color: black;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+   cursor: pointer;
+}
+
+/*hero section*/
+.hero {
+  background: linear-gradient(to right,#F59A02, #00f2fe);
+color: black;
+text-align:center;
+padding: 70px 20px;
+}
+
+.hero h1 span {
+  color:#40094D;
+}
+
+.btn{
+background: white;
+color: #29220D;
+padding: 10px 20px;
+text-decoration: none;
+margin-top: 20px;
+display: inline-block;
+border-radius: 25px;
+}
+
+/* about section */
+.about{
+  padding: 40px 50px;
+  text-align: center;
+  
+}
+
+.about-content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center ;
+}
+
+.about-content img{
+  max-width: 150px;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+/*projects section*/
+.projects {
+  padding: 200px 20px;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: #E8B5FC;
+  padding: 20px;
+  border-radius: 10px;
+  transition: Transform 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+/*contact secion*/
+.contact{
+  padding: 40px 20px;
+  text-align: center;
+}
+
+form{
+  max-width: 400px;
+  margin: auto;
+}
+
+input, textarea{
+  width: 100px;
+  padding: 10px;
+  margin: 15px 0;
+}
+
+button {
+  background: #4facfe;
+  color: black;
+  border: black;
+  padding: 10px;
+  width: 95%;
+  cursor: pointer;
+}
+
+.button: hover{
+  background: #00c6ff;
+}
+
+/*footer*/
+footer{
+   background: linear-gradient(to left,#8523, #00f2fe);
+  color: black;
+  padding: 10px;
+  text-align: center;
+}
+
+/*Responsive Navbar*/
+@media screen and (max-width: 768px) {  
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background:#333;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    width: 200px;
+}
+  
+.nav-links.show{
+  display: flex;
+}
+  
+.menu-toggle{
+  display: block;
+ }
+}
+
+ 
